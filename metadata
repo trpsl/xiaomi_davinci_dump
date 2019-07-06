@@ -1,0 +1,9 @@
+ota-property-files=metadata:69:309         
+ota-required-cache=0
+ota-type=BLOCK
+post-build=Xiaomi/davinci/davinci:9/PKQ1.190302.001/V10.3.6.0.PFJMIXM:user/release-keys
+post-build-incremental=V10.3.6.0.PFJMIXM
+post-sdk-level=28
+post-security-patch-level=2019-05-01
+post-timestamp=1559483212
+pre-device=davinci

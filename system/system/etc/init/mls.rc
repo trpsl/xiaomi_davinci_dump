@@ -1,0 +1,18 @@
+#==============================================================================
+# Copyright (c) 2017-2018 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#==============================================================================*/
+on post-fs-data
+    #Create data directory for mirrorlink server
+    mkdir /data/misc/mirrorlinkserver 0770 system system
+
+service mls /system/bin/mirrorlinkserver
+    class late_start
+    user system
+    socket mirrorlinkserverapi stream 0660 system system
+    socket mirrorlinkserverah stream 0660 system system
+    #supplemental group ids added
+    #inet - allow mls to create AF_INET sockets
+    group system inet
+    oneshot
