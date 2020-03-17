@@ -1,0 +1,12 @@
+[
+    {
+        "subject": "davincidefault",
+        "international": true,
+        "hwversion": [
+            "*"
+        ],
+        "local": {
+            "id": "0"
+        }
+    }
+]
